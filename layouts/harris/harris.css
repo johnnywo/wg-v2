@@ -1,0 +1,349 @@
+/**
+ * @file
+ * Harris panel layout
+**/
+
+@include 'singularity';
+
+.harris-container {
+  margin-bottom: 1em;
+}
+
+.harris-column-content-region {
+  min-height: 1px;
+  width: 25.532%;
+  float: left;
+}
+
+  .harris-column-content-region-inner {
+    margin-right: 20px;
+  }
+
+  .harris-column2 {
+    width: 23.404%;
+  }
+  
+    .harris-column2-inner {
+      margin-right: 0;
+    }
+  
+  .harris-content {
+    width: 51.064%;
+  }
+  
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .harris-column-content-region,
+  .harris-column2,
+  .harris-content {
+    width: 100%;
+    float: none;
+  }
+  
+  .harris-column-content-region-inner {
+    margin-right: 0;
+  }
+}
+
+div.harris-container:nth-child(2){
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+/***********************************/
+
+/*******************************************************************************
+ * mariahero copied from divine.layout.scss
+ *
+ * Styling of the "mariahero" layout demonstrating the golden rule and asymmetric
+ * grids with Singularity.
+ ******************************************************************************/
+
+
+/*
+// Set consistent vertical and horizontal spacing units.
+$vert-spacing-unit: 20px;
+/*$horz-spacing-unit: 1em;*/
+
+/*// Set breakpoint values
+$tab  : 700px;
+$desk : 1020px;
+
+// Set Singularity grid variables.
+$grids: 1;
+$grids: add-grid(10 at $tab);
+$grids: add-grid(16 at $desk);
+
+$gutters: 1/3;
+
+.l-page {
+  margin: 0 auto;
+//@include background-grid;
+}
+
+.l-header,
+.l-main {
+  @include pie-clearfix; // pie-clearfix adds &:after {content: ""; display: table; clear: both;}
+  margin-bottom: $vert-spacing-unit;
+  //@include background-grid;
+}
+
+
+
+
+// .l-header Inhaltsbereich **************************************************
+
+.wohngesund-top{
+  @include pie-clearfix;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  @include pie-clearfix;
+}
+
+.l-region--header{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.l-region--first{
+  width: 100%;
+  clear: both;
+  height: 30px;
+  @include pie-clearfix;
+  
+  .hotline{
+    @include breakpoint($desk){
+      @include grid-span(5,1);
+    }
+  }
+  .standorte-top{
+    @include breakpoint($desk){
+      @include grid-span(6,6);
+    }
+  }
+  .pane-menu-hauptnavigation-side-links{
+    @include breakpoint($desk){
+      @include grid-span(5,12);
+    }
+  }
+ 
+}
+
+.l-branding{
+  @include breakpoint($desk){
+    @include grid-span(3,1);
+    clear: both;
+  }
+  .l-region--branding{
+    
+    .pane-page-logo{
+      @include grid-span(1,2,2);
+      @include breakpoint($desk){
+        @include grid-span(2,1,2);
+      }
+    }
+  }
+}
+
+
+.l-region--shopping-cart{ 
+
+   .pane-search-form{
+   
+     @include breakpoint($tab){
+       @include grid-span(5,3);
+     }
+     @include breakpoint($desk){
+       @include grid-span(6,4);
+     }
+     
+   } 
+   
+   .panel-pane.siegel{
+     @include breakpoint($tab){
+       @include grid-span(2,8);
+     }
+     @include breakpoint($desk){
+       @include grid-span(2,10);           
+     }
+   }
+   
+   .pane-commerce-cart-cart {
+       
+       @include breakpoint($tab){
+         @include grid-span(2,9);
+       }
+       @include breakpoint($desk){
+         @include grid-span(5,12);
+       }
+
+     }
+   .eingeloggt {
+        @include breakpoint($tab){
+         @include grid-span(2,9);
+       }
+       @include breakpoint($desk){
+         @include grid-span(5,12);
+       }
+     
+   }  
+               
+}  
+
+.responsive-menus.responsified{
+  @include grid-span(1,1,2);
+  .responsive-menus-simple {
+  @include isolation-span(2,1,2);  
+  }
+}
+
+
+
+
+
+
+
+// .l-main Inhaltsbereich **************************************************
+
+.has-no-sidebars{     
+
+  .l-main{
+  
+    max-width: 1000px; 
+    margin: 0 auto;
+    //@include background-grid;
+    
+  }
+  
+}
+
+
+.has-one-sidebar{
+
+  .l-main{
+  
+    max-width: 1000px; 
+    margin: 0 auto;
+    //@include background-grid;
+    
+    
+  }
+  
+  @include breakpoint ($tab){
+  
+    .l-main{
+      
+        .l-content{
+          @include grid-span(7, 1); 
+        }
+        
+        .l-region--sidebar-first{
+          @include grid-span(3, 8);
+        }
+      
+    }
+
+    
+  }
+  
+  @include breakpoint ($desk){
+  
+  .l-main{
+  
+    max-width: 1000px; 
+    margin: 0 auto;
+    //@include background-grid;
+    
+      .l-content{
+        @include grid-span(11.5, 5.5);
+      }
+      
+      .l-region--sidebar-first{
+        @include grid-span(4, 1);
+      }
+    
+  }
+
+  }
+  
+  
+}
+
+
+.has-two-sidebars{
+
+  .l-main{
+  
+    max-width: 1000px; 
+    margin: 0 auto;
+    //@include background-grid;
+    
+    .l-content{
+      
+      margin: 0;
+      
+    }
+    
+  }
+  
+  @include breakpoint ($tab){
+  
+    .l-main{
+      
+        .l-content{
+          @include grid-span(7, 1); 
+        }
+        
+        .l-region--sidebar-first{
+          @include grid-span(3, 8);
+        }
+        
+        .l-region--sidebar-second{
+          @include isolation-span(10, 1, 'both');
+        }
+      
+    }
+
+    
+  }
+  
+  @include breakpoint ($desk){
+  
+  .l-main{
+  
+    max-width: 1000px; 
+    margin: 0 auto;
+    //@include background-grid;
+    
+      .l-content{
+        @include grid-span(9, 5);  
+      }
+      
+      .l-region--sidebar-first{
+        @include grid-span(4, 1);
+      }
+      
+      .l-region--sidebar-second{
+        @include grid-span(3, 14);
+      }
+    
+  }
+
+  }
+  
+}
+
+// Footer Inhaltsbereich **************************************************
+   
+footer{ 
+  .l-region--footer{
+    max-width: 1000px; 
+    margin: 0 auto;
+  }
+}
+
+*/
+  

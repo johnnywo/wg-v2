@@ -1,0 +1,68 @@
+/**
+ * @file
+ * produkte panel layout
+**/
+
+.produkte-container,
+.produkte-content-header,
+.produkte-content-footer,
+.produkte-content-container-column-container {
+  margin-bottom: 1em;
+}
+
+.produkte-column {
+  min-height: 1px;
+  width: 22.85714%;
+  float: left;
+  margin-right: 2.85714%; }
+  @media only screen and (max-width: 640px) {
+    .produkte-column {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; 
+      } 
+  }
+
+  .produkte-column-inner {
+  }
+
+  .produkte-content-column2-inner {
+  }
+  
+.produkte-content-container {
+  min-height: 1px;
+  width: 74.28571%;
+  float: right;
+  margin-right: 0; }
+  @media only screen and (max-width: 640px) {
+    .produkte-content-container {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; 
+      } 
+}
+
+  .produkte-content-column1 {
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  
+  .produkte-content-column2 {
+    width: 48.57143%;
+    float: left;
+    margin-right: 0;
+  }
+  
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .produkte-column,
+  .produkte-content-container,
+  .produkte-content-column1,
+  .produkte-content-column2 {
+    width: 100%;
+    float: none;
+  }
+  

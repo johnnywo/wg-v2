@@ -1,0 +1,96 @@
+////////////////////////////////////////////////////////////////////////////////
+// "vars" partial
+// --------------------
+//
+////////////////////////////////////////////////////////////////////////////////
+
+//
+// Variables
+////////////////////////////////////////
+//Wohngesund Farben
+$braun:     #4a3730;
+$beige:     #f7ce87;
+$tuerkis:   #257575;
+$orange:    #F18430;
+$rot:       #A62320; //Türen
+
+$button:    #7a6862;
+
+//Holzdiele.com Farben
+$hellgelb:  #FDF1DC;
+$hellorange: #eeb44f;
+
+//
+// Widths
+//
+$first_sidebar_width: 238px;
+$second_sidebar_width: 200px;
+$page_width: 1000px;
+
+//
+// Breakpoints
+//
+$tablet: 1000px; //This is set to page width by default
+$tablet_portrait: 768px;
+$mobile: 640px;
+
+//
+// Heights
+//
+$navigation_height: 40px;
+$footer_height: auto;
+
+//
+// Padding
+//
+$section_padding: 10;
+$mobile_padding: 5;
+
+//
+// Backgrounds, change these when you get started with your theme.
+//
+$border: 1px dotted $braun;
+
+$header_bg: $braun;
+$footer_bg: $braun;
+$sidebar_first_bg: $braun;
+$sidebar_second_bg: $braun;
+$navigation_bg: $braun;
+
+//
+// Fonts
+//
+$main_font: "open-sans", 'open sans', helvetica, Arial, sans-serif;
+$monospace_font: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+//
+// Colors
+//
+//$link_color: darken($beige,30%);
+$link_color: #BF9F69;
+//$visited_link_color: $link_color;
+$visited_link_color: #BF9F69;
+$active_link_color: $link_color;
+$main_text_color: lighten($braun,3%);
+$header_text_color: $main_text_color;
+$selection_text_color: $braun;
+$selection_bg_color: $beige;
+
+//
+// CSS Sprites
+//
+//$icon-width: 36px;
+//$icon-height: 36px;
+$icons: sprite-map('icons/*.png');
+
+$more-width: 30px;
+$more-height: 30px;
+$more: image-url('plus-minus-30px.png');
+
+//
+// Partials to be shared with all .scss files.
+////////////////////////////////////////
+@import "compass";                  // See http://compass-style.org
+@import "compass/reset/utilities";
+@import "mixins";                   // Import our custom mixins last.
+@import "../bower_components/_susy.scss";

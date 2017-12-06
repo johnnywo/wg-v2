@@ -1,0 +1,47 @@
+/**
+ * @file
+ * neubau panel layout
+**/
+
+.neubau-container {
+  margin-bottom: 1em;
+}
+
+.neubau-sidebar {
+  min-height: 1px;
+  width: 34.043%;
+  float: left;
+}
+
+  .neubau-sidebar-inner {
+    margin-right: 20px;
+  }
+
+.neubau-content {
+  width: 65.957%;
+  float: left;
+}
+
+.wohngesund-main-content{
+}
+
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .neubau-content,
+  .neubau-sidebar {
+    width: 100%;
+    float: none;
+  }
+  
+  .neubau-sidebar-inner {
+    margin-right: 0;
+  }
+  
+}
+
+.neubau-column-content, .neubau-page-top-inner, .neubau-header-inner, .neubau-navbar-inner{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+

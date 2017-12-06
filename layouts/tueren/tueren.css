@@ -1,0 +1,68 @@
+/**
+ * @file
+ * tueren panel layout
+**/
+
+.tueren-container,
+.tueren-content-header,
+.tueren-content-footer,
+.tueren-content-container-column-container {
+  margin-bottom: 1em;
+}
+
+.tueren-column {
+  min-height: 1px;
+  width: 22.85714%;
+  float: left;
+  margin-right: 2.85714%; }
+  @media only screen and (max-width: 640px) {
+    .tueren-column {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; 
+      } 
+  }
+
+  .tueren-column-inner {
+  }
+
+  .tueren-content-column2-inner {
+  }
+  
+.tueren-content-container {
+  min-height: 1px;
+  width: 74.28571%;
+  float: right;
+  margin-right: 0; }
+  @media only screen and (max-width: 640px) {
+    .tueren-content-container {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; 
+      } 
+}
+
+  .tueren-content-column1 {
+    width: 48.57143%;
+    float: left;
+    margin-right: 2.85714%;
+  }
+  
+  .tueren-content-column2 {
+    width: 48.57143%;
+    float: left;
+    margin-right: 0;
+  }
+  
+/* iPhone [portrait + landscape] */
+@media only screen and (max-width: 480px) {
+  .tueren-column,
+  .tueren-content-container,
+  .tueren-content-column1,
+  .tueren-content-column2 {
+    width: 100%;
+    float: none;
+  }
+  
