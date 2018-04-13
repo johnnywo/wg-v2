@@ -4436,6 +4436,31 @@ ul.tabsy li.current {
   }
 }
 
+// DSGVO Checkboxes
+
+.webform-client-form .dsgvo .form-item {
+    display: block; 
+    border-bottom: none;
+    margin-bottom: -19px;
+    margin-top: -10px;
+}
+.webform-client-form .dsgvo input {
+    float: none;
+    width: inherit;
+    display: inline;
+}
+
+.dsgvo.webform-container-inline label {
+    display: inline;
+    margin-right: 1em;
+}
+
+.dsgvo span.form-required {
+    display: none;
+}
+
+
+
 
 
 
